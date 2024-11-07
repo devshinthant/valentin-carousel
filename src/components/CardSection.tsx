@@ -6,154 +6,159 @@ export default function CardSection() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger)
 
-    gsap.to("#card-1", {
-      immediateRender: false,
+    const animations = [
+      gsap.to("#card-1", {
+        immediateRender: false,
+        scrollTrigger: {
+          trigger: "#main",
+          start: "40% bottom",
+          end: "70% bottom",
+          scrub: true,
+        },
+        ease: "none",
+        clipPath: "polygon(0% 0%, 0% 0%,0% 0%, 0% 0%)",
+      }),
 
-      scrollTrigger: {
-        trigger: "#main",
-        start: "40% bottom",
-        end: "70% bottom",
-        scrub: true,
-      },
-      ease: "none",
-      clipPath: "polygon(0% 0%, 0% 0%,0% 0%, 0% 0%)",
-    })
+      gsap.to("#card-1-img", {
+        immediateRender: false,
+        scrollTrigger: {
+          trigger: "#main",
+          start: "40% bottom",
+          end: "70% bottom",
+          scrub: true,
+        },
+        ease: "none",
+        translateX: "-50%",
+        translateY: "-50%",
+      }),
 
-    gsap.to("#card-1-img", {
-      immediateRender: false,
+      gsap.to("#card-1-wrapper", {
+        immediateRender: false,
+        scrollTrigger: {
+          trigger: "#main",
+          start: "40% bottom",
+          end: "70% bottom",
+          scrub: true,
+        },
+        ease: "none",
+        scale: 0.6,
+      }),
 
-      scrollTrigger: {
-        trigger: "#main",
-        start: "40% bottom",
-        end: "70% bottom",
-        scrub: true,
-      },
-      ease: "none",
-      translateX: "-50%",
-      translateY: "-50%",
-    })
+      gsap.to("#card-2", {
+        immediateRender: false,
+        scrollTrigger: {
+          trigger: "#main",
+          start: "40% bottom",
+          end: "70% bottom",
+          scrub: true,
+        },
+        ease: "none",
+        clipPath: "polygon(0% 0%, 100% 0%,100% 100%, 0% 100%)",
+      }),
 
-    gsap.to("#card-1-wrapper", {
-      immediateRender: false,
+      gsap.to("#card-2-img", {
+        immediateRender: false,
+        scrollTrigger: {
+          trigger: "#main",
+          start: "40% bottom",
+          end: "70% bottom",
+          scrub: true,
+        },
+        ease: "none",
+        transform: "translate(0%, 0%)",
+      }),
 
-      scrollTrigger: {
-        trigger: "#main",
-        start: "40% bottom",
-        end: "70% bottom",
-        scrub: true,
-      },
-      ease: "none",
-      transform: "scale(0.6)",
-    })
+      gsap.to("#card-2-wrapper", {
+        immediateRender: false,
+        scrollTrigger: {
+          trigger: "#main",
+          start: "40% bottom",
+          end: "70% bottom",
+          scrub: true,
+        },
+        ease: "none",
+        scale: 1,
+      }),
 
-    gsap.to("#card-2", {
-      immediateRender: false,
+      gsap.to("#card-2", {
+        immediateRender: false,
+        scrollTrigger: {
+          trigger: "#main",
+          start: "70% bottom",
+          end: "bottom bottom",
+          scrub: true,
+        },
+        ease: "none",
+        clipPath: "polygon(0% 0%, 0% 0%,0% 0%, 0% 0%)",
+      }),
 
-      scrollTrigger: {
-        trigger: "#main",
-        start: "40% bottom",
-        end: "70% bottom",
-        scrub: true,
-      },
-      ease: "none",
-      clipPath: "polygon(0% 0%, 100% 0%,100% 100%, 0% 100%)",
-    })
+      gsap.to("#card-2-img", {
+        immediateRender: false,
+        scrollTrigger: {
+          trigger: "#main",
+          start: "70% bottom",
+          end: "bottom bottom",
+          scrub: true,
+        },
+        ease: "none",
+        translateX: "-50%",
+        translateY: "-50%",
+      }),
 
-    gsap.to("#card-2-img", {
-      immediateRender: false,
+      gsap.to("#card-2-wrapper", {
+        immediateRender: false,
+        scrollTrigger: {
+          trigger: "#main",
+          start: "70% bottom",
+          end: "bottom bottom",
+          scrub: true,
+        },
+        ease: "none",
+        scale: 0.6,
+      }),
 
-      scrollTrigger: {
-        trigger: "#main",
-        start: "40% bottom",
-        end: "70% bottom",
-        scrub: true,
-      },
-      ease: "none",
-      transform: "translate(0%,0%)",
-    })
+      gsap.to("#card-3", {
+        scrollTrigger: {
+          trigger: "#main",
+          start: "70% bottom",
+          end: "bottom bottom",
+          scrub: true,
+        },
+        ease: "none",
+        clipPath: "polygon(0% 0%, 100% 0%,100% 100%, 0% 100%)",
+      }),
 
-    gsap.to("#card-2-wrapper", {
-      immediateRender: false,
-      scrollTrigger: {
-        trigger: "#main",
-        start: "40% bottom",
-        end: "70% bottom",
-        scrub: true,
-      },
-      ease: "none",
-      transform: "scale(1)",
-    })
+      gsap.to("#card-3-img", {
+        scrollTrigger: {
+          trigger: "#main",
+          start: "70% bottom",
+          end: "bottom bottom",
+          scrub: true,
+        },
+        ease: "none",
+        translateX: "0%",
+        translateY: "0%",
+      }),
 
-    gsap.to("#card-2", {
-      immediateRender: false,
-      scrollTrigger: {
-        trigger: "#main",
-        start: "70% bottom",
-        end: "bottom bottom",
-        scrub: true,
-      },
-      ease: "none",
-      clipPath: "polygon(0% 0%, 0% 0%,0% 0%, 0% 0%)",
-    })
+      gsap.to("#card-3-wrapper", {
+        scrollTrigger: {
+          trigger: "#main",
+          start: "70% bottom",
+          end: "bottom bottom",
+          scrub: true,
+        },
+        ease: "none",
+        scale: 1,
+      }),
+    ]
 
-    gsap.to("#card-2-img", {
-      immediateRender: false,
-      scrollTrigger: {
-        trigger: "#main",
-        start: "70% bottom",
-        end: "bottom bottom",
-        scrub: true,
-      },
-      ease: "none",
-      translateX: "-50%",
-      translateY: "-50%",
-    })
+    const handleResize = () => ScrollTrigger.refresh()
+    window.addEventListener("resize", handleResize)
 
-    gsap.to("#card-2-wrapper", {
-      immediateRender: false,
-      scrollTrigger: {
-        trigger: "#main",
-        start: "70% bottom",
-        end: "bottom bottom",
-        scrub: true,
-      },
-      ease: "none",
-      transform: "scale(0.6)",
-    })
-
-    gsap.to("#card-3", {
-      scrollTrigger: {
-        trigger: "#main",
-        start: "70% bottom",
-        end: "bottom bottom",
-        scrub: true,
-      },
-      ease: "none",
-      clipPath: "polygon(0% 0%, 100% 0%,100% 100%, 0% 100%)",
-    })
-
-    gsap.to("#card-3-img", {
-      scrollTrigger: {
-        trigger: "#main",
-        start: "70% bottom",
-        end: "bottom bottom",
-        scrub: true,
-      },
-      ease: "none",
-      translateX: "0%",
-      translateY: "0%",
-    })
-
-    gsap.to("#card-3-wrapper", {
-      scrollTrigger: {
-        trigger: "#main",
-        start: "70% bottom",
-        end: "bottom bottom",
-        scrub: true,
-      },
-      ease: "none",
-      transform: "scale(1)",
-    })
+    return () => {
+      animations.forEach((animation) => animation.scrollTrigger?.kill())
+      window.removeEventListener("resize", handleResize)
+    }
   }, [])
 
   return (

@@ -21,7 +21,7 @@ function App() {
   }, [])
 
   return (
-    <ReactLenis root options={{ autoRaf: true }} ref={lenisRef}>
+    <ReactLenis root ref={lenisRef}>
       <section className="h-auto w-screen bg-black px-12">
         <section id="main" className="relative h-[500vh] w-full">
           <section
