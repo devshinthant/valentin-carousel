@@ -2,14 +2,17 @@ import { useEffect, useRef } from "react"
 import gsap from "gsap"
 import { LenisRef, ReactLenis } from "lenis/react"
 import CardSection from "./components/CardSection"
+import Description from "./components/Description"
+import ProjectName from "./components/ProjectName"
 import ProjectSlide from "./components/ProjectSlide"
+import SubInfo from "./components/SubInfo"
 
 function App() {
   const lenisRef = useRef<LenisRef | null>(null)
 
   useEffect(() => {
     function update(time: number) {
-      lenisRef.current?.lenis?.raf(time * 950)
+      lenisRef.current?.lenis?.raf(time * 100)
     }
 
     gsap.ticker.add(update)
@@ -20,7 +23,7 @@ function App() {
   return (
     <ReactLenis root options={{ autoRaf: true }} ref={lenisRef}>
       <section className="h-auto w-screen bg-black px-12">
-        <section id="main" className="relative h-[400vh] w-full">
+        <section id="main" className="relative h-[500vh] w-full">
           <section
             id="sticky-section"
             className="sticky left-0 top-0 h-screen w-full"
@@ -31,45 +34,15 @@ function App() {
                 gridTemplateColumns: "repeat(16,1fr)",
               }}
             >
-              {/* Project Name */}
-              <div
-                className=""
-                style={{
-                  position: "relative",
-                  zIndex: 2,
-                  gridColumn: "1/4",
-                  gridRow: "2/3",
-                  alignSelf: "end",
-                }}
-              >
-                Project name
-              </div>
-              {/* Project Name */}
+              <ProjectName />
 
               <ProjectSlide />
 
               <CardSection />
 
-              {/* Sub Info */}
-              <div
-                style={{
-                  gridColumn: "13/16",
-                }}
-              >
-                {" "}
-                Sub info
-              </div>
-              {/* Sub Info */}
+              <SubInfo />
 
-              {/* Description */}
-              <div
-                style={{
-                  gridColumn: "13/17",
-                  alignSelf: "end",
-                }}
-              >
-                Description
-              </div>
+              <Description />
             </div>
           </section>
         </section>

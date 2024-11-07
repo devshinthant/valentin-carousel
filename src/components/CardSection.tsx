@@ -59,8 +59,7 @@ export default function CardSection() {
         scrub: true,
       },
       ease: "none",
-      translateX: "0%",
-      translateY: "0%",
+      transform: "translate(0%,0%)",
     })
 
     gsap.to("#card-2-wrapper", {
@@ -193,10 +192,7 @@ export default function CardSection() {
           >
             <img
               id="card-2-img"
-              style={{
-                transform: "translate(50%,50%)",
-              }}
-              className="absolute h-full object-cover object-center"
+              className="absolute h-full w-full translate-x-1/2 translate-y-1/2 object-cover object-center"
               src="https://valentincheval.design/_astro/define-hero.D97LaZGw_ZaAv2R.webp"
             />
           </div>
@@ -224,7 +220,7 @@ export default function CardSection() {
               style={{
                 transform: "translate(50%,50%)",
               }}
-              className="absolute h-full object-cover object-center"
+              className="absolute h-full w-full object-cover object-center"
               src="https://valentincheval.design/_astro/gotymebank.D2jICiWb_Z8ICOc.webp"
             />
           </div>
