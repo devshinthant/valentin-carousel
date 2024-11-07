@@ -11,7 +11,7 @@ export default function CardSection() {
         immediateRender: false,
         scrollTrigger: {
           trigger: "#main",
-          start: "40% bottom",
+          start: "30% bottom",
           end: "70% bottom",
           scrub: true,
         },
@@ -23,7 +23,7 @@ export default function CardSection() {
         immediateRender: false,
         scrollTrigger: {
           trigger: "#main",
-          start: "40% bottom",
+          start: "30% bottom",
           end: "70% bottom",
           scrub: true,
         },
@@ -36,7 +36,7 @@ export default function CardSection() {
         immediateRender: false,
         scrollTrigger: {
           trigger: "#main",
-          start: "40% bottom",
+          start: "30% bottom",
           end: "70% bottom",
           scrub: true,
         },
@@ -48,7 +48,7 @@ export default function CardSection() {
         immediateRender: false,
         scrollTrigger: {
           trigger: "#main",
-          start: "40% bottom",
+          start: "30% bottom",
           end: "70% bottom",
           scrub: true,
         },
@@ -60,7 +60,7 @@ export default function CardSection() {
         immediateRender: false,
         scrollTrigger: {
           trigger: "#main",
-          start: "40% bottom",
+          start: "30% bottom",
           end: "70% bottom",
           scrub: true,
         },
@@ -72,7 +72,7 @@ export default function CardSection() {
         immediateRender: false,
         scrollTrigger: {
           trigger: "#main",
-          start: "40% bottom",
+          start: "30% bottom",
           end: "70% bottom",
           scrub: true,
         },
