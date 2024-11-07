@@ -7,6 +7,8 @@ export default function CardSection() {
     gsap.registerPlugin(ScrollTrigger)
 
     gsap.to("#card-1", {
+      immediateRender: false,
+
       scrollTrigger: {
         trigger: "#main",
         start: "40% bottom",
@@ -18,6 +20,8 @@ export default function CardSection() {
     })
 
     gsap.to("#card-1-img", {
+      immediateRender: false,
+
       scrollTrigger: {
         trigger: "#main",
         start: "40% bottom",
@@ -30,6 +34,8 @@ export default function CardSection() {
     })
 
     gsap.to("#card-1-wrapper", {
+      immediateRender: false,
+
       scrollTrigger: {
         trigger: "#main",
         start: "40% bottom",
@@ -41,6 +47,8 @@ export default function CardSection() {
     })
 
     gsap.to("#card-2", {
+      immediateRender: false,
+
       scrollTrigger: {
         trigger: "#main",
         start: "40% bottom",
@@ -52,6 +60,8 @@ export default function CardSection() {
     })
 
     gsap.to("#card-2-img", {
+      immediateRender: false,
+
       scrollTrigger: {
         trigger: "#main",
         start: "40% bottom",
@@ -63,6 +73,7 @@ export default function CardSection() {
     })
 
     gsap.to("#card-2-wrapper", {
+      immediateRender: false,
       scrollTrigger: {
         trigger: "#main",
         start: "40% bottom",
