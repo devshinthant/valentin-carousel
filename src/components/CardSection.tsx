@@ -147,13 +147,7 @@ export default function CardSection() {
   }, [])
 
   return (
-    <div
-      className="relative h-full"
-      style={{
-        gridColumn: "5/11",
-        gridRow: "1/3",
-      }}
-    >
+    <div className="relative col-start-5 col-end-11 row-start-1 row-end-3 h-full">
       <div className="grid h-full w-full">
         <div
           id="card-1"

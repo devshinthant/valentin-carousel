@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react"
 import gsap from "gsap"
 import { LenisRef, ReactLenis } from "lenis/react"
 import CardSection from "./components/CardSection"
+import ProjectSlide from "./components/ProjectSlide"
 
 function App() {
   const lenisRef = useRef<LenisRef | null>(null)
@@ -45,19 +46,7 @@ function App() {
               </div>
               {/* Project Name */}
 
-              {/* Project Slide */}
-              <div
-                className=""
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  gridColumn: "1/3",
-                  width: "6.6rem",
-                }}
-              >
-                Project slide
-              </div>
-              {/* Project Slide */}
+              <ProjectSlide />
 
               <CardSection />
 
